@@ -1,0 +1,32 @@
+h2,td{
+   /*  background-color: rgb(209, 200, 206); Color rgb d fondo */
+    text-align: center; /* Centrado d nuestro etiqueta */
+    color: #ece5da; /* Color hexadecimal d la letra */
+    font-size: xx-large;/* El ancho d la letra*/
+    font-weight: bold;/* Estructura de grosor d la letra */
+    letter-spacing: 1px;/* Interespaciado de las grafias */
+    padding: 6px;
+}
+.fondoEncabezado{
+   /*  width: 800px; */
+    height: 400px;
+    text-align: center; /* Centrado d nuestro etiqueta */
+    margin: 0 auto;
+    padding-top: 150px;
+    background-image:url(../images/hemisferio.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+      background-color: rgb(209, 200, 206);
+}
+img{
+    width: 150px;
+}
+a{
+    /* text-decoration: none; */
+    color: #ece5da;
+    /* Acesibilidad en la visualizacion de  los link */
+    text-decoration-style:double;
+}
