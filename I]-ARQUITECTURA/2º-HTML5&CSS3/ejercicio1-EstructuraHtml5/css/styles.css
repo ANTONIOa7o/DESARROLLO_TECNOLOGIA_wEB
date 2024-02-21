@@ -1,32 +1,77 @@
-h2,td{
-   /*  background-color: rgb(209, 200, 206); Color rgb d fondo */
-    text-align: center; /* Centrado d nuestro etiqueta */
-    color: #ece5da; /* Color hexadecimal d la letra */
-    font-size: xx-large;/* El ancho d la letra*/
-    font-weight: bold;/* Estructura de grosor d la letra */
-    letter-spacing: 1px;/* Interespaciado de las grafias */
+h2,
+td,
+li {
+    /*  background-color: rgb(209, 200, 206); Color rgb d fondo */
+    text-align: center;
+    /* Centrado d nuestro etiqueta */
+    color: #31363b;
+    /* Color hexadecimal d la letra */
+    font-size: xx-large;
+    /* El ancho d la letra*/
+    font-weight: bold;
+    /* Estructura de grosor d la letra */
+    letter-spacing: 1px;
+    /* Interespaciado de las grafias */
     padding: 6px;
 }
-.fondoEncabezado{
-   /*  width: 800px; */
+
+.fondoEncabezado {
+    /*  width: 800px; */
+
     height: 400px;
-    text-align: center; /* Centrado d nuestro etiqueta */
+    text-align: center;
+    /* Centrado d nuestro etiqueta */
     margin: 0 auto;
     padding-top: 150px;
-    background-image:url(../images/hemisferio.png) ;
+    background-image: url(../images/hemisferio.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-body{
-      background-color: rgb(209, 200, 206);
+
+body {
+    background-color: rgb(209, 200, 206);
 }
-img{
+
+img {
     width: 150px;
 }
-a{
+
+/* Tanto la etiqueta a(enlaces), como ul(listas no ordenadas)
+usaremos los atributos text-decoration y list-styles, con el
+valor none (no), y evitar configuraciones visuales antiguas
+*/
+a {
     /* text-decoration: none; */
-    color: #ece5da;
+    /* Respuesta al ejercicio parte b */
+    color: #e2a4e2;
     /* Acesibilidad en la visualizacion de  los link */
-    text-decoration-style:double;
+    text-decoration-style: double;
+
+}
+
+ul {
+    list-style: none;
+    /* Eliminamos la confiiguracion de estructra arriba abajo */
+    list-style-type: none;
+
+}
+li{
+    /* Centrar una lista */
+    display: inline;
+    padding: 0px 16px;
+
+   
+}
+/* Respuesta al ejercicio parte c */
+p {
+    text-align: justify;
+    color: #31363b;
+    font-size: larger;
+}
+/* Construimos excepciones cuando nos enfrentamos
+a etiquetas ya con valores generalizados */
+li img{
+    width: 36px;
+  
 }
