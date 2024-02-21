@@ -17,11 +17,11 @@ li {
 
 .fondoEncabezado {
     /*  width: 800px; */
-
+  margin: 0 auto;
     height: 400px;
     text-align: center;
     /* Centrado d nuestro etiqueta */
-    margin: 0 auto;
+  
     padding-top: 150px;
     background-image: url(../images/hemisferio.png);
     background-position: center;
@@ -66,6 +66,7 @@ li{
 /* Respuesta al ejercicio parte c */
 p {
     text-align: justify;
+    text-align: center;
     color: #31363b;
     font-size: larger;
 }
