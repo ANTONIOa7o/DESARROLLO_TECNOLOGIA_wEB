@@ -1,0 +1,26 @@
+h2 {
+    font-family: 'Reggae One', cursive;
+    font-size: x-large;
+    color: darkblue;
+    text-align: center;
+}
+
+.titulo1 {
+    text-shadow: 3px 3px 3px rgb(194, 188, 188);
+}
+
+.titulo2 {
+    text-shadow: -3px -3px 3px rgb(194, 188, 188);
+}
+
+.titulo3 {
+    text-shadow: 4px 4px 4px red,
+        8px 8px 8px green,
+        10px 10px 10px blue;
+}
+/* Titulo 4 será una sombra ortodoxa de uso */
+.titulo4 {
+    text-shadow: 3px 3px 3px #999,
+        6px 6px 6px #bbb,
+        9px 9px 9px #ddd;
+}

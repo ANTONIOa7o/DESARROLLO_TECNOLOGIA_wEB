@@ -1,0 +1,23 @@
+div {
+    background-color: blanchedalmond;
+    margin: 36px;
+    padding: 32px;
+}
+
+.cuadro1 {
+    /* El atributo que define las sombras, estará definido
+    por  box-shadow
+    los valores sera x,y,z(ejes de coordenadas)
+    cada tres valores, establece una capa con coma (,)
+     */
+    box-shadow: 10px 10px 9px gainsboro;
+   
+}
+
+.cuadro2 {
+    /* Trabajamos las  capas */
+    box-shadow: 10px 10px 9px rgb(220, 220, 220),
+        20px 20px 10px rgb(225, 221, 222),
+        30px 30px 10px rgb(246, 244, 244);
+
+}
