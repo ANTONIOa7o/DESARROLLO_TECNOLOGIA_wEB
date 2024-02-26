@@ -1,0 +1,25 @@
+
+/* Medida por defecto del el lienzo DocType */
+html{
+font-size: 16px;
+}
+/* las em,  no son mas que una referencia asociada
+a los pixeles, donde 1 em = a 16px
+*/
+.em li{
+    font-size: 1.3em; /* Siempre hereda */
+}
+/* las medidas rem, al igual que la anterior será una referencia
+a pixeles, donde 1rem = a 16px */
+.rem li{
+   font-size: 1.3rem; 
+}
+li{
+    font-size: 120%;
+}
+hr{
+    width: 80%;
+    border-color: brown;
+    height: 1em;
+
+}

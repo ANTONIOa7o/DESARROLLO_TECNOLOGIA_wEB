@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS</title>
+</head>
+
+<body>
+    <!--
+        ------
+        LISTAS
+        ------
+    A. Listas Ordenadas
+    Presenta elementos de forma ordenada (numerica o alpha)
+    Etiqueta Contenedora
+    Sintaxis:
+        <ol>
+            <li></li>
+        </ol>
+    Atributos Asociados:
+    type=""
+    Valores:
+    "1"
+    "a"
+    "I"
+    "i"
+    "A"
+    -->
+    <div>
+        <h2 align="center">Ejemplos de Listas</h2>
+        <h3>Listas Ordenadas</h3>
+        <h4>Ejemplo 1: Listas simples o sencillas</h4>
+        <ol type="i">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ol>
+
+
+        <h4>Ejemplo 2: Listas Anidadas</h4>
+        <ol type="a">
+            <li>Luis
+                <ol>
+                    <li>Maite
+                        <ol type="A">
+                            <li>Damon</li>
+                        </ol>
+                    </li>
+                    <li>Luis jr</li>
+                </ol>
+            </li>
+            <li>Carmen</li>
+            <li>Dolores</li>
+            <!-- Ejercicio: El elemento Padre realizar lista anidada
+            hasta el 4º nivel -->
+            <li>Padre
+                <ol>
+                    <li>Hijo
+                        <ol>
+                            <li>Nieto
+                                <ol>
+                                    <li>Bisnieto</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <hr width="80%">
+        <!-- 
+            B.LISTAS NO ORDENADAS
+            Elemntos donde el orden no es prioritario. Asociado a viñetas
+            Sintaxis:
+            <ul>
+                <li></li>
+            </ul>
+            Atributos asociados:
+            Type=""
+            Valores:
+            Circle, square, disk
+         -->
+        <h3>Listas NO Ordenadas</h3>
+        <h4>Ejemplo 1: Listas clásica</h4>
+        <ul>
+            <li>Vino</li>
+            <li>Refresco de 2l</li>
+            <li>Patatas Fritas</li>
+        </ul>
+
+        <h4>Ejemplo 2: Sin listar</h4>
+        <!-- 
+            Atributo General para sustituir a los atributos independientes
+            sintaxis:
+            styles=""
+          -->
+        <ul style="list-style: none;text-align: center;">
+            <li>☢Ford</li>
+            <li>❌Maseratti</li>
+            <li>🔴Jeep</li>
+        </ul>
+        <hr style="width: 80%;">
+        <h4>Ejemplo 1: Listas Glosario</h4>
+        <!-- 
+            B.1 Glosarios
+            Generar definiciones
+            Sintaxis:
+            <dl>
+                <dt></dt>
+                <dd></dd>
+            </dl>
+
+          -->
+        <dl>
+            <dt style="color: red;">HTML5</dt>
+            <dd>Metalenguaje para la visualización en DocType</dd>
+            <dt style="color: blue;">CSS</dt>
+            <dd>Lenguaje generador de estilos de aplicación en Cascada, de manera independiente</dd>
+            <dt style="font-weight: bold;">JS</dt>
+            <dd>Lenguaje de ejecución dinamica en el entorno Cliente</dd>
+        </dl>
+        <hr style="width: 80%;">
+        <!-- 
+            C. LISTAS DESPLEGABLES
+            Auna un conjunto de una lista
+            Sintaxis: De forma general utilizaremos la etiqueta <select>
+            a)<select>
+                <option></option>
+            </select>
+            b)<select>
+                <optgroup>
+                    <option></option>
+                </optgroup>
+            </select>
+           -->
+        <h3>Listas DESPLEGABLES</h3>
+        <h4>Ejemplo 1: desplegable sencilla</h4>
+        <div style="text-align: center;">
+            <select>
+                <option value="">-----Selecciona-----</option>
+                <option value="">JavaScript</option>
+                <option value="">CSS3</option>
+                <option value="">HTML5</option>
+            </select><br>
+            <h4>Ejemplo 2: desplegable compuesto</h4>
+        </div>
+        <div style="text-align: right;">
+             <select>
+                <optgroup label="1º opcion">
+                    <option value="">JavaScript</option>
+                    <option value="">CSS3</option>
+                    <option style="color: red;" value="">HTML5</option>
+                </optgroup>
+                <optgroup style="color: blue;" label="2º opcion">
+                    <option value="">Python</option>
+                    <option value="">C++</option>
+                    <option value="">Kotlin</option>
+                </optgroup>
+             </select>
+        </div>
+       
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+h2 {
+    font-family: 'Reggae One', cursive;
+    font-size: x-large;
+    color: darkblue;
+    text-align: center;
+}
+
+.titulo1 {
+    text-shadow: 3px 3px 3px rgb(194, 188, 188);
+    font-size: 60px;
+}
+
+.titulo2 {
+    text-shadow: -3px -3px 3px rgb(194, 188, 188);
+    font-size: 60px;
+}
+
+.titulo3 {
+    text-shadow: 4px 4px 4px red,
+        8px 8px 8px green,
+        10px 10px 10px blue;
+    font-size: 60px;
+}
+
+/* Titulo 4 será una sombra ortodoxa de uso */
+.titulo4 {
+    text-shadow: 3px 3px 3px #999,
+        6px 6px 6px #bbb,
+        9px 9px 9px #ddd;
+    font-size: 60px;
+}
+
+.sombra1 {
+    /* Al final todos los lenguajes a resumir
+    su lenguaje
+     */
+    font: 1.5em Georgia, cursiva;
+    text-shadow: 1px 1px 2px black,
+        0.1px 0.1px 0.1rem #bbb,
+        0.1rem 0.01rem 0.2rem #ddd;
+
+}
+
+.sombra2 {
+    /* Al final todos los lenguajes a resumir
+    su lenguaje
+     */
+    font: 1.5em Georgia, cursiva;
+    text-shadow: 1px 1px 2px black,
+        0.1px 0.1px 0.1rem #bbb,
+        0.1rem 0.01rem 0.2rem #ddd;
+    color: whitesmoke;
+
+}
+
+.sombra3 {
+    font-family: 'Anta', cursive;
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px 2px black,
+        0.1px 0.1px 0.1rem #bbb,
+        0.1rem 0.01rem 0.2rem #ddd;
+}
+
+/* Ejercicio en parrafo 4, Crear:
+    a) Sobre fondo negro,  
+    b) inyectar una letra estilo espacial o  digital, 
+    c) añadiendo sombras visuales
+*/
+.sombra4 {
+    font-family: 'Anta', cursive;
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px 2px black,
+        0.1px 0.1px 0.1rem #bbb,
+        0.1rem 0.01rem 0.2rem #ddd;
+    background-color: black;
+}
