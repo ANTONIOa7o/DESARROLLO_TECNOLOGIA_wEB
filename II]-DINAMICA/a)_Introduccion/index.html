@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href=""> -->
 </head>
 
 <body>
@@ -34,16 +35,19 @@
             Q2.El control perceptivo de la visualizacion, ofreciendo una multitud
             de ventajas en la MULTIPLATAFORMA (adapta a cualquier dispositivo)
  -->
-    <div style="text-align: center; margin:0 auto;">
+    <div class="container" style="text-align: center; margin:0 auto;">
+        <!-- la clase en bootstrap "container" será nuestro encapsulador
+        multiplataforma
+     -->
         <h2 class="display-2">ESTETICA DE BOOTSTRAPS</h2>
         <!-- vemos un cambio estetico general, no obstante tendremos
         a nuestra disposicion una cantidad de recursos para mejorar aun mas
-    la percepcion de nuestra pagina.
+            la percepcion de nuestra pagina.
             PARA ELLO LLAMAREMOS EN EL HTML, CON EL ATRIBUTO Class="" los 
             estilos que tiene bootstrap
--->
-        <h3 class="display-3" >LISTAS</h3>
-        <h4>Listas Originales</h4>
+            -->
+        <h3 class="display-3">LISTAS</h3>
+        <h4 class="display-5">Listas Originales</h4>
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
@@ -52,7 +56,122 @@
             <li>Item 5</li>
             <li>Item 6</li>
         </ul>
+        <h4 class="display-6">Lista Modificada</h4>
+        <ul class="list-unstyled">
+            <li>🎯Item 1</li>
+            <li>🎯Item 2</li>
+            <li>🎯Item 3</li>
+            <li>🎯Item 4</li>
+            <li>🎯Item 5</li>
+            <li>🎯Item 6</li>
+        </ul>
+        <br>
+        <h4 class="display-6">Listas en linea</h4>
+        <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+            <li class="list-inline-item">Item 4</li>
+            <li class="list-inline-item">Item 5</li>
+            <li class="list-inline-item">Item 6</li>
+        </ul>
     </div>
+
+    <hr style="width: 80%;margin: auto;">
+    <div class="container">
+        <h3 class="display-6"> <b>Tablas</b></h4>
+            <!-- Policromias de  Bootstrap
+        Dark(Negro), White(Blanco), Primary(Azul), Secondary(Grisaceo),
+         Warning(Amarillo), Danger(Rojo), Info(Cian), Success (Verde)
+        -->
+            <h4>Tabla cebreadas</h4>
+            <table class="table table-success table-striped">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                    <th>Encabezado 4</th>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2</td>
+                    <td>dato 3</td>
+                    <td>dato 4</td>
+                </tr>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2</td>
+                    <td>dato 3</td>
+                    <td>dato 4</td>
+                </tr>
+            </table>
+            <h4>Tablas Seleccion</h4>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>Tema 1</th>
+                    <th>Tema 2</th>
+                    <th>Tema 3</th>
+                    <th>Tema 4</th>
+                </tr>
+                <tr>
+                    <td>Elemento 1</td>
+                    <td>Elemento 2</td>
+                    <td>Elemento 3</td>
+                    <td>Elemento 4</td>
+                </tr>
+                <tr>
+                    <td>Elemento 1</td>
+                    <td>Elemento 2</td>
+                    <td>Elemento 3</td>
+                    <td>Elemento 4</td>
+                </tr>
+                <tr>
+                    <td>Elemento 1</td>
+                    <td>Elemento 2</td>
+                    <td>Elemento 3</td>
+                    <td>Elemento 4</td>
+                </tr>
+                <hr>
+
+            </table>     
+    </div>
+
+    <div class="container">
+        <h3 class="h2">Parrafos</h3>
+        <h4>Parrafos Clasicos</h4>
+        <p class="lead">
+            Lorem ipsum dolor sit amet.
+            Cumque odio vel beatae! Officia.
+            Ducimus saepe in aspernatur vel.
+            Consequuntur cumque iure laudantium omnis.
+            Vero assumenda illo ad id.
+        </p>
+        <p class="lead text-danger text-center">
+            Lorem ipsum dolor sit amet.
+            Cumque odio vel beatae! Officia.
+            Ducimus saepe in aspernatur vel.
+            Consequuntur cumque iure laudantium omnis.
+            Vero assumenda illo ad id.
+        </p>
+        <!-- las alturas entre elementos tendra sm, lg, line-hight(lh) -->
+        <p class="lh-sm text-muted">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolores!
+            Minima, quisquam quo. Omnis eius illum porro voluptatum, quis non.
+            Minima illum et qui dolores ducimus enim adipisci beatae. Numquam!
+            Aperiam vel, nobis rerum cum temporibus dolorum inventore aliquid nihil.
+            Reprehenderit animi, officiis nulla sed expedita facere perspiciatis dignissimos. Delectus!
+            Architecto sint, molestiae animi dicta blanditiis rem tempore voluptatem earum.
+            Sequi, assumenda officia expedita blanditiis possimus cum ex molestiae nihil.
+            Praesentium quis quia voluptatem dolores id adipisci aliquid ducimus iusto.
+            Excepturi omnis delectus hic quae molestias consequuntur eligendi est cupiditate!
+            Accusantium quae eaque rem asperiores necessitatibus, ea quo. Recusandae, aperiam.
+
+        </p>
+
+
+
+    </div>
+  
 </body>
 
 </html>
