@@ -2,79 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduccion a bootstrap II</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <!-- ↓ La carga de la libreria de CSS (Estilos y visualizaciones) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduccion a bootstrap II</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <!-- ↓ La carga de la libreria de CSS (Estilos y visualizaciones) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- ↓ La carga de la libreria de JavaScript (Dinamicas y comportamientos) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+  <!-- ↓ La carga de la libreria de JavaScript (Dinamicas y comportamientos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Encapsulamiento predeterminado -->
-    <div class="container" style="text-align: center; margin: 0 auto;">
-        <h3 class="display-5">Botones</h3>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-link">Link >></button>
-        <div>
-            <button type="button" class="btn" style="background-color: orangered;color: whitesmoke;"><b>Modificado</b></button>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-            <button type="button" class="btn btn-outline-success">Success</button>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
-            <button type="button" class="btn btn-outline-warning">Warning</button>
-            <button type="button" class="btn btn-outline-info">Info</button>
-            <button type="button" class="btn btn-outline-light">Light</button>
-            <button type="button" class="btn btn-outline-dark">Dark</button>
-        </div>
-        <div>
-            <h3 class="display-5">Tarjetas(Cards)</h3>
-            <div class="card-group">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
-        </div>
+  <!-- Encapsulamiento predeterminado -->
+  <div class="container" style="text-align: center; margin: 0 auto;">
+    <h3 class="display-5">Botones</h3>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link >></button>
+    <div>
+      <button type="button" class="btn"
+        style="background-color: orangered;color: whitesmoke;"><b>Modificado</b></button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
     </div>
+    <div>
+      <!--  -->
+      <h3 class="display-5">Tarjetas(Cards)</h3>
+      <!-- COMPONENTE 3 IMAGENES + VENTA  -->
+      <div class="card-group">
+        <!-- 1º imagen card -->
+        <div class="card">
+          <img src="https://picsum.photos/id/3/5000/3333.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="color: blue;">Centro Formacion Calderon</h5>
+            <p class="card-text">
+            <address>
+              C/Alcala 313 <br>
+              24022 <br>
+              Madrid
+            </address>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Certificado por la CAM</small>
+          </div>
+        </div>
+        <!-- 2º imagen Card -->
+        <div class="card">
+          <img src="https://picsum.photos/5000/3333?random=1&grayscale" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">APUNTATE</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <!-- 3º imagen card -->
+        <div class="card">
+          <img src="https://picsum.photos/id/8/4728/3168" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CURSOS DE FORMACION</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 style="text-align: center;margin:0 auto;">Barra de Navegacion</h3>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: coral;">
+      <div class="container-fluid">
+        <!-- imagen corporativa  -->
+        <a class="navbar-brand" href="https://github.com/ANTONIOa7o">
+          <img src="images/ecommerce 1.png" alt="" width="110px" height="80px" style="margin:-36px;">
+          A7o 
+        </a>
+        <!-- Boton de colpse, es decir, cuando la pantalla no puede
+        mostrar toda la barra de tareas, deja un boton, el famoso toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav"style="padding-top: 16px;>
+            <li class="nav-item" ">
+              <a class="nav-link active" aria-current="page" href="#"><b style="color: whitesmoke;">Inicio</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Cursos de Formacion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Apuntate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Proximamente</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </body>
 
 </html>
