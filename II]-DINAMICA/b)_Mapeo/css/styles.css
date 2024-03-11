@@ -1,0 +1,61 @@
+.border{
+    border-width: 8px !important;
+    border-color: white !important;
+}
+/* Para sobre escribir un estilo de bootstrap;
+llamaré a su clase, la modificare utilizando la orden !important
+*/
+.encabezado{
+    height: 80px;
+    text-align: left;
+    background-color: greenyellow;
+    font-size: 40px;
+    border-radius: 12px 12px 0px 0px;
+}
+.secion1{
+    background-color: red;
+    height: 400px;
+    text-align: center;
+    font-size: 100pt;
+    border-radius: 50%;
+    padding-top: 60px;
+}
+.secion2{
+    background-color: red;
+    height: 400px;
+    text-align: center;
+    font-size: 100pt;
+    padding-top: 60px;
+}
+.secion3{
+    background-color: red;
+    height: 400px;
+    text-align: center;
+    font-size: 100pt;
+    padding-top: 60px;
+}
+.footer1{
+    background-color: yellow;
+    height: 60px;
+    text-align: right;
+    font-size: 30px;
+    border-radius: 0px 0px 12px 12px;
+}
+.footer2{
+    background-color: yellow;
+    height: 60px;
+    text-align: left;
+    font-size: 30px;
+    border-radius: 0px 0px 12px 12px;
+}
+/* 
+Establecer desde bootstrap las distintas
+visualizaciones de posicion de nuestros 
+elementos partiendo del dispositivo de 
+recuperacion de la informacion
+a) Moviles- <=365 px (_sm será su referencia)
+b) Pantallas pequeñas (tablet Vertical y horizotal)- >=575px (_sm será su referencia)
+c) Pantallas portatiles, escritorio o allOne-   >=765px (_md será su referencia)
+d) Pantallas smartTv- >=1200px (_lg será su referencia)
+
+*/
