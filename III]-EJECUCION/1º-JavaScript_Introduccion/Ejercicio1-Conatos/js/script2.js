@@ -11,7 +11,7 @@ a) document.write
 */
 
 document.write('<h3>Mi segundo script sin control</h3>');
-document.write('<h2> Mi tercer script </h2>')
+document.write('<h2> Mi tercer script </h2>');
 
 /* b) console.log{
     va dirigida a los entornos de ejecución no visibles siempre al usuario,

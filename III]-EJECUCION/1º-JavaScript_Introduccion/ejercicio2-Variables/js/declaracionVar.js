@@ -1,8 +1,9 @@
-/* 
-            _____________
+
+   /*          _____________
             
-            DECRACION Var
-            _____________
+               DECRACION Var
+               _____________
+
     Como realmente se declaran la variables desde su inicio
     hasta su declaracion mas directa.
     a)Explicita
@@ -16,8 +17,10 @@
     Como ya dijimos habrá palabras reservadas a dicho lenguaje
     una de ellas será la de variable, es decir, 'var' y seguidamente
     el nombre que se le asigna a dicha variable:
+
     var nombreVariable;
     Una vez asignado el nombre, se le ASIGNA un valor:
+    
     nombreVariable = 'Valor'; 
     dicho valor tendrá diferentes caracteristicas que abordaremos mas
     adelante
@@ -30,7 +33,7 @@
     var nombre = 'Toño';
 
     Vamos a llamar a nuestra variable →
-*/
+ */
 
 var nombre = 'Antonio Cuadrado Alvarez';
 var apodo ='Toño';
