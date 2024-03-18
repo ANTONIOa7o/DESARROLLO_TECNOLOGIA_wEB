@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparaciones + Var</title>
     <!-- | Enlace favicon | -->
-    <link rel="shortcut icon" href="favicon.icon" type="image/s-icon">
+    <link rel="shortcut icon" href="" type="image/s-icon">
 
     <!-- | Link nativo o propio CSS | -->
     <link rel="stylesheet" href="css/">
@@ -29,7 +29,7 @@
 
 <body>
     <div class="container">
-        <h3 class="display-3">A] OPERADORES LÓGICOS</h3>
+        <h3 class="display-3">A] Operadores Lógicos</h3>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -67,7 +67,7 @@
                 </tr>
             </tbody>
         </table>
-        <h3 class="display-3">B] OPERADORES RELACIONALES</h3>
+        <h3 class="display-3">B] Operadores Relaciones</h3>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -92,12 +92,120 @@
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td>Mayor</td>
+                    <td> (>) </td>
+                    <td>Comparacion de cantidad mayor que el elemento comparado</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Menor</td>
+                    <td> (<) </td>
+                    <td>Comparacion de cantidad menor que el elemento comparado</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Mayor o igual</td>
+                    <td> (>=) </td>
+                    <td>Comparacion de cantidad mayor o igual que el elemento comparado</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Menor o igual</td>
+                    <td> (<=) </td>
+                    <td>Comparacion de cantida menor o igual que el elemento comparado</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Igualdad estricta</td>
+                    <td> === </td>
+                    <td>Igualdad en toda la naturaleza de los elementos, tanto valor como tipo</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Contrario a Igualdad estricta</td>
+                    <td> !== </td>
+                    <td>Distinto a la Igualdad de toda la naturaleza de los elementos, tanto en valor como en tipo</td>
                 </tr>
             </tbody>
         </table>
+        <h3 class="display-3">C] Operadores Aritméticos</h3>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Operadores</th>
+                <th scope="col">Simbolo</th>
+                <th scope="col">Descripcion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Suma,resta, división y multiplicacion</td>
+                <td>+,-,/,*</td>
+                <td>Operadores aritmeticos de numero reales</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Cambio de signo</td>
+                <td>-(+valor aritmetico)</td>
+                <td>Cambio de valor en el 3º o 4º cuadrante</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Incremento</td>
+                <td>++</td>
+                <td>Incremento en sucesion del valor propio del elemento</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Decremento</td>
+                <td>--</td>
+                <td>Decremento en sucesion del valor propio del elemento</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Resto de la division</td>
+                <td>%</td>
+                <td>apunta al valor de la division obtenida en su resto</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
+    <script>
+    /* variable: */
+        var numero = 7;
+
+        /* b) Operadores Relacionales */
+        console.log('igualdad: ' + (numero==7)); //true;
+        console.log('Desigualdad: ' + (numero!='7'));// false;
+        console.log('Mayor que:  ' +  (numero>5));//true;
+        console.log('Menor que:  ' +  (numero<5));// false;
+        console.log('Mayor o igual que:  ' +  (numero>=10));//false;
+        console.log('Menor o igual que:  ' +  !(numero<=5));//true;
+
+        /* ↆ Incidir en las igualdades estrictas */
+        console.log('Igualdad estricta:  ' +  (numero==='7'));//false
+        console.log('Igualdad :  ' +  (numero=='7'));// true
+        console.log('Desigualdad :  ' +  !(numero!=='7'));//false ;
+
+        console.log('---------------------------------------')
+
+/* variables: */
+
+var nombre1='Jefersson';
+var nombre2='Maholis';
+
+        /* a) Operadores lógicos */
+        console.log('Condicion -Y- : '+ ((nombre1=='jeferson')&&(nombre2=='Maholis')) );// false
+        console.log('Condicion -Y- : '+ ((nombre1==true)&&(nombre2=='Maholis')) );// false
+        console.log('Condicion -ó- : '+ ((nombre1=='jeferson')||(nombre2=='Maholis')) );// true
+        /* Negaciones */
+        console.log('Condicion -Y- : '+ (!(nombre1=='Jefersson')&&(nombre2=='Maholis')) );// false
+        console.log('Condicion -ó- : '+ !((nombre1=='jeferson')|| !(nombre2=='Maholis')) );// true
+        
+
+    </script>
 </body>
 
 </html>
