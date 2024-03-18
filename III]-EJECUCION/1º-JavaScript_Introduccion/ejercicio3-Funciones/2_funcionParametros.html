@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funciones+Parametros</title>
-       <!-- cargar todos los recursos que nutriran nuestra pagina
+    <!-- cargar todos los recursos que nutriran nuestra pagina
     a)nativos: mi scrip y mi css
     b)externos(Api´s):
         b.1 Bootstraps
         b.2 sweetAlert
     -->
     <!-- a) -->
-    <link rel="stylesheet" href="css/">
-   <!--  !!!Ojo que en ocasiones no carga el script sin antes obtener los recursos -->
-     <script src="js/2_script2.js"></script> 
+    <link rel="stylesheet" href="css/1_styles.css">
+    <!--  !!!Ojo que en ocasiones no carga el script sin antes obtener los recursos -->
+    <script src="js/2_script2.js"></script>
 
     <!-- b) -->
     <!-- |b.1 bootstrap Carga estilos CSS | -->
@@ -27,14 +28,17 @@
     <!-- |b.2 Enlace estilos y ejecuciones de los sweetalert | -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+
 <body>
-    <div class="container" style="text-align: center; margin: 32px auto;">
+    <div class="container" style="text-align: center;">
+        <img src="images/CalculadoraII.png" style="width:8%;" alt="">
         <h3 class="display-5">Calculadora free</h3>
+
         <button class="btn btn-success" onclick="sumar()">SUMAR</button>
-        <button class="btn btn-secondary"onclick="restar()">RESTAR</button>
+        <button class="btn btn-secondary" onclick="restar(n1,n2)">RESTAR</button>
         <button class="btn btn-danger" onclick="multiplicar()">MULTIPLICAR</button>
         <button class="btn btn-warning" onclick="dividir()">DIVIDIR</button>
-
     </div>
 </body>
+
 </html>

@@ -32,6 +32,17 @@ function sumar() {
     })
     
 }
-function restar() {
+function restar(n1,n2) {//Como trabaja esta funcion, sin la llamada de  los parámetros
+swal('el resultado de la resta es: '+ (n1-n2));
+    
+}
+
+function multiplicar() {
+    swal('el resultado de la multiplicacion es: ' + (n1*n2));
+    
+}
+
+function dividir() {
+    swal('el resultado de la multiplicacion es: ' + (n1/n2));
     
 }
