@@ -1,0 +1,33 @@
+.centrado{
+    margin: 32px auto;
+    text-align: center; 
+    
+}
+p{
+    text-align: justify;
+}
+
+/* 
+La propiedad id, aparece como un elemento de llamada versatil
+tanto para js como para CSS. Significa que al igual que hemos 
+llamado desde js, a traves del metodo getElementById(), podremos
+llamarlo desde el css a traves del selector #.
+Ofrenciendo asi un motor de conexion entre el js y css dentro 
+del Doctype(html, document)
+                ⇩
+*/
+#resultado{
+    margin: 16px auto;
+    text-align: center;
+    width: auto;
+    background-color: black;
+    color: green;
+    font-size: 64px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px gray;
+    border: 2px solid gainsboro;
+
+}
+img{
+    width: 82px;
+}
