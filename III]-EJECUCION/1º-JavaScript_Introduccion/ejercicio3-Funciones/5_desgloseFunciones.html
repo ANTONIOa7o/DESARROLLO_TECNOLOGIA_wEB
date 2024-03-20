@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recogida de 'DATOS'</title>
+    <!-- |bootstrap Carga estilos CSS | -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- |bootstrap Carga libreria JS (Javascript) | -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- | Enlace estilos y ejecuciones de los sweetalert | -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Nativos -->
+    <link rel="stylesheet" href="css/4_styles.css">
+    <script src="js/4_script.js"></script>
+    <!-- Voy a copiar nuestro script y lo llevaremos al
+    final del body
+ -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Badget, un formato de bolsa al  id que al final no se ha utilizado-->
+        <button onclick="reenvio()" style="float: right;" class="btn btn-outline-danger" id="resultado">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="bi bi-door-open"
+                viewBox="0 0 16 16">
+                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1" />
+                <path
+                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z" />
+            </svg>
+        </button>
+
+        <!-- Traemos el index de sign-in -->
+        <main class="form-signin text-center">
+            <form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="172" height="157" fill="crimson"
+                    class="bi bi-person-badge" viewBox="0 0 16 16">
+                    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path
+                        d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z" />
+                </svg>
+                <h1 class="h3 mt-3 mb-3 fw-normal">EVENTOS AL CLICK:</h1>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="eMail" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Dirección e-mail</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="contraseña" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Recuerdame
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-danger mb-5" onclick="login()" type="button">Acceso:</button>
+                <a href="https://github.com/ANTONIOa7o">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="crimson" class="bi bi-github"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+                <p class="text-muted">
+                    CFC &copy;2023–2024
+                </p>
+            </form>
+        </main>
+        <!-- Modal estatico para la de explicacion -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            Analisis de los Eventos:
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-info-circle-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+            </svg>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                    <b>4 fases</b> en el Desglose del evento <code>click</code> del usuario
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>
+                <ol>
+                    <li>onmouseover: desplazarse dentro del entorno del botonn(hover)</li>
+                    <li>eventos de escucha: click, la primera accion del boton del raton(active)</li>
+                    <li>onclick: click2, soltar la accion del boton del raton</li>
+                    <li>onmouseout: desplazarse fuera del entorno del boton</li>
+                </ol>
+                </p>
+            <button class="btn btn-danger" type="button" 
+                onmouseover="primerEvento()" 
+                onclick="tercerEvento()"
+                onmouseout="cuartoEvento()">
+                Eventos:<!-- svg -->
+            </button>
+                <div class="card-body">
+                    <h5 class="card-title" id="resultado2"></h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/4_script.js"></script>
+    <script src="js/5_script.js"></script>
+</body>
+
+</html>

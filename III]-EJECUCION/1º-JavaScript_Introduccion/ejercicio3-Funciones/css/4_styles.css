@@ -1,13 +1,8 @@
 /* Estilo Heredado de patrones sign-in */
-html,
-body {
-  height: 100%;
-}
+
 
 /* Añadimos ese estilo a la imagen para ajustarla en el body */
-svg{
-  margin-top: 64px;
-}
+
 
 body {
   display: flex;
@@ -42,4 +37,13 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+/* respuesta2, nuestro percepcion en css 
+el id del doctype(html), es definido en css
+ con el selector '#'
+*/
+#resultado2{
+  text-align: left;
+  color: crimson;
+  font-weight: bold;
 }
