@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion: Estructuras de Control</title>
+    <!-- Recodad inyectar cualdquier configuracion
+    que necesiteis en el head
+ -->
+    <!-- | bootstrap Carga estilos CSS | -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- | bootstrap Carga libreria JS (Javascript) | -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- |b.2 Enlace estilos y ejecuciones de los sweetalert | -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container " style="margin: 0 auto; text-align: center;margin-top: 16px;">
+        <h4 class="display-4">ESTRUCTURAS DE CONTROL</h4>
+        <p class="display-6">
+            Un conjunto de acciones que nos permiten acceder a la posibilidad de poder <br>
+            tomar decisiones (ejecuciones diversas) y ofrecer una gran cantidad de combinacion <br>
+            o posibilidades de resultados visuales o criteriales.
+        <ul style="list-style:none; text-align: start;">
+            <li>🎯if else</li>
+            <li>🧲switch case</li>
+            <li>🍳for
+                <ul style="list-style:none;">
+                    <li>for in</li>
+                    <li>for of</li>
+                    <li>for each
+                    <li>funcion arrow =></li>
+            </li>
+        </ul>
+        </li>
+        <li>🥏while & Do While</li>
+        </ul>
+        </p>
+        <!-- 1º boton -->
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample0" aria-expanded="false" aria-controls="collapseWidthExample">
+                IF ELSE
+            </button>
+        </p>
+        <div style="min-height:60px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample0">
+                <div class="card card-body" style="width: 700px; text-align: left;">
+                    Definida por su Sintaxis:
+                    <pre>
+                if(condicion == true){
+                        *En esta acotacion, al igual que en las funciones
+                            se ejecutará[las sentencias definidas]
+                } else{
+                         *Ejecucion de esta acotación siempre y cuando
+                            la condicion inicial sea == false
+                }
+                Ejemplo de la ejecuciones
+                var numero2 = 4;
+
+                if (numero1  >=5) {
+                    swal('Numero1 es mayor o igual que 5 ');
+                } else if(numero2>=5) {
+                    swal('Numero2 es mayor o igual que 5')
+                }else {
+                    swal('Ambos numeros son menor que 5')
+                }
+                </pre>
+                <script>
+                    var numero1 = 3;
+                    /* condicion sencilla esta trabajando dependiendo
+                    del valor de la variable. Asi cambie dicha  variable
+                    evalua de nuevo y confirma si es true(if) o false(else)
+                    */
+                   /* ejemplo 1 
+                    if (numero1 >= 4) {
+                        swal('El numero1 es mayor o igual que 4')
+                    } else {
+                        swal('El numero1 es menor que 4')
+                    } */
+
+                    /* ejemplo2 */
+                    var numero2 = 4;
+
+                    if (numero1  >=5) {
+                        swal('Numero1 es mayor o igual que 5 ');
+                    } else if(numero2>=5) {
+                        swal('Numero2 es mayor o igual que 5')
+                    }else {
+                        swal('Ambos numeros son menor que 5')
+                    }
+
+                </script>
+                </div>
+            </div>
+        </div>
+        <!-- 2º -->
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                switch Case
+            </button>
+        </p>
+        <div style="min-height: 60px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 700px; text-align: left;">
+                    Definida por su sintaxis:
+                    <pre>
+                    switch(evaluacion o condicion){
+                        *Establecemos los distintos casos segun la condicion
+                        case ('string', number,boolean);
+                        break;
+                        . 
+                        case
+                        break;
+                        . 
+                        . 
+                        etc.
+                    }
+                   </pre>
+                </div>
+            </div>
+        </div>
+        <!-- 3º -->
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">
+                for
+            </button>
+        </p>
+        <div style="min-height: 60px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                <div class="card card-body" style="width: 700px;text-align: start;">
+                    Definido por su sintaxis:
+                    <pre>
+
+                    for(declara var , condicion, como  incrementa ++){
+                        *En esta acotacion, se ejecutarán todas las sentencias
+                        mientras la condicion sea == true;
+                    }
+                  </pre>
+                </div>
+            </div>
+        </div>
+        <!-- 4º -->
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample">
+                while & Do While
+            </button>
+        </p>
+        <div style="min-height: 60px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                <div class="card card-body" style="width: 700px;   text-align: start;">
+                    Definimos por su sintaxis:
+                    <pre>
+                        do{
+                            ejecutará
+                            al menos un intento, sin evaluar la condicion
+                        }
+                        while(Condicion == true){
+                            *En esta acotacion, al igual que en las funciones
+                            se ejecutará[las sentencias definidas], 
+                            
+                            incremento ++
+                        }
+                    </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -10,6 +10,10 @@ var respuesta = 0;
 function ventaTotal() {
     agregar(++contador);/* conseguimos el click transformalo a numero */
     venta();
+    /* Podremos desplegar toda una bateria
+    de funciones que se ejecutan en orden
+    a la accion de esta funcion
+    */
 }
 
 
@@ -29,6 +33,17 @@ function borrar() {
     document.getElementById('nºClick').innerHTML=contador;
     document.getElementById('resultado').innerHTML=contador;
     
+}
+function comprar(respuesta,contador) {
+    /* Puedo hacer pasar por esta funcion dichos parametros,
+    enchufe preparado para la conexion back
+     */
+    /* var gastosenvio=0;
+    var totaldebengo = respuesta*gastosenvio;
+    function vetaImpuesto() {
+        location.protocol(totaldebengo)
+    } */
+    document.getElementById('abono').href='https://www.watersportsoutlet.com/';
 }
 
 

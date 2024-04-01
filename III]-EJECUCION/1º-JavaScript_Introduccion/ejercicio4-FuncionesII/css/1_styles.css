@@ -7,3 +7,11 @@ Mover imagen para resaltar la visualizacion
 img{
     margin: 18px;
 } */
+#resultado{
+    height: 32px;
+    color:green;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    text-shadow:0px 3px 4px green;
+}
